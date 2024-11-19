@@ -103,6 +103,10 @@ h2 {
     display: inline-block;
 }
 
+#goal {
+    font-size: large;
+}
+
 /* Skills */
 .skills .bar {
     background: #E0E4E8;
