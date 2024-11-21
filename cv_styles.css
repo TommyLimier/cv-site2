@@ -152,6 +152,10 @@ h2 {
     margin: auto;
 }
 
+.qr-code a {
+    margin: auto;    
+}
+
 .video {
     display: flex;
     align-items: center;
