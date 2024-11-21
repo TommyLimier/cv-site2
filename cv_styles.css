@@ -16,6 +16,7 @@ body {
     padding: 0;
     background: var(--background-color);
     color: var(--secondary-color);
+    animation: fadeIn 1s ease-in-out;
 }
 
 a {
@@ -52,6 +53,7 @@ header {
 header h1 {
     font-size: 2.8rem;
     font-weight: 700;
+    animation: slideIn 1s ease-out;
 }
 
 .nav-list {
@@ -115,12 +117,45 @@ h2 {
     margin: 0.7rem 0;
     height: 14px;
     box-shadow: inset var(--shadow);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.skills .bar:hover {
+    transform: scale(1.05);
 }
 
 .skills .progress {
     height: 100%;
     background: var(--primary-color);
-    transition: width 1s ease-out;
+    transition: width 1.5s ease-out;
+}
+
+.skills .bar:hover .progress {
+    width: calc(100% - 10%);
+}
+
+/* QR Code */
+.qr-code {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Timeline */
@@ -187,11 +222,3 @@ footer {
         opacity: 1;
     }
 }
-
-body {
-    animation: fadeIn 1s ease-in-out;
-}
-
-header h1 {
-    animation: slideIn 1s ease-out;
-}            
