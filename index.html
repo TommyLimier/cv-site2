@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,6 +8,7 @@
     <title>CV - Tommy LIMIER</title>
     <!-- Polices Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet link -->
     <link rel="stylesheet" href="cv_styles.css">
     <!-- Favicon --> 
     <link rel="icon" type="image/png" href="https://github.com/TommyLimier/Ressource/blob/main/favicon-96x96.png?raw=true" sizes="96x96" />
@@ -22,9 +24,15 @@
         <div class="header-content">
             <img src="https://raw.githubusercontent.com/TommyLimier/Ressource/refs/heads/main/Tommy_limierlogo-1-.png" 
                  alt="Photo de profil Tommy LIMIER" class="profile-picture">
-                <h1>Développeur Web en Devenir</h1>
-                <div id="sticky-header">
+            <h1>Développeur Web en Devenir</h1>
+            <div id="sticky-header">
                 <nav>
+                    <!-- Menu Burger -->
+                    <button id="burger-menu" class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="nav-list">
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#goal">Objectif</a></li>
@@ -35,9 +43,7 @@
                 </nav>
             </div>
         </div>
-    </header>
-    
-    
+    </header> 
     <main>
         <!-- CONTACT -->
         <section id="contact" class="contact">
@@ -142,14 +148,17 @@
             </div>
         </section>
     </main>
+    <!-- FOOTER -->
     <footer>
         <p>&copy; Novembre 2024 Tommy LIMIER - Tous droits réservés.</p>
     </footer>
+    <!-- BACK TO TOP -->
     <a href="#" id="backToTop" title="Retour en haut">
         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed">
             <path d="m282-225-42-42 240-240 240 240-42 42-198-198-198 198Zm0-253-42-42 240-240 240 240-42 42-198-198-198 198Z"/>
         </svg>
     </a>
+    <!-- SCRIPT link -->
     <script src="cv_script.js"></script>
 </body>
 </html>
