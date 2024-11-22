@@ -1,3 +1,4 @@
+
 /* Variables de thème */
 :root {
     --primary-color: #4A90E2;
@@ -38,6 +39,7 @@ header {
     box-shadow: var(--shadow);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+    top: 0;
 }
 
 .profile-picture {
@@ -53,14 +55,6 @@ header h1 {
     font-size: 2.8rem;
     font-weight: 700;
     animation: slideIn 1s ease-out;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 1.5rem 0 0;
 }
 
 .nav-list li a {
@@ -232,6 +226,43 @@ h2 {
     transform: scale(1.1); 
 }
 
+/* Styles pour le menu burger */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 1001;
+    margin-top: 1rem;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Activer le menu */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1.5rem 0 0;
+    transition: transform 0.3s ease;
+}
+
+.nav-list.hidden {
+    display: none;
+}
+
 
 /* Footer */
 footer {
@@ -245,21 +276,76 @@ footer {
     box-shadow: var(--shadow);
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    .burger-menu {
+        display: flex; /* Visible uniquement sur mobile */
     }
 
     .nav-list {
+        display: none;
         flex-direction: column;
-        gap: 1rem;
+        position: absolute;
+        width: 25%;
+        background: var(--background-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        padding: 0;
+        margin: 1rem 0 0;
+        gap: 1.5rem;
     }
 
     .nav-list li a {
-        font-size: 1rem;
+        color: var(--highlight);
+        border-bottom: solid 1px var(--secondary-color);
+        margin: 1rem 0 0;
+        gap: 1.5rem;
+    }
+
+    .nav-list.visible {
+        display:flex;
+        width: 40%;
+    }
+
+    header {
+        padding-top: 0.25rem;
+        padding-bottom: 1rem;
+        display: flex;
+    }
+
+    .profile-picture {
+        size: smaller;
+        display: none;
+    }
+
+    header h1 {
+        font-size: smaller;
+        display: none;
+        top: 0;
+    }
+
+    .burger-menu {
+        top: 0; /* Ajustement de la position */
+        right: 0;
+    }
+
+    nav ul {
+        gap: 0; /* Réduction de l'espacement entre les liens */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Réduction de la taille des liens */
+        padding: 0; /* Réduction des marges internes */
+    }
+
+    main {
+        text-align: center;
+    }
+    ul {
+        padding: 0;
     }
 }
+
 
 /* Animations */
 @keyframes fadeIn {
