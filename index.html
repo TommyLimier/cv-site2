@@ -8,30 +8,25 @@
     <title>CV - Tommy LIMIER</title>
     <!-- Polices Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Stylesheet link -->
     <link rel="stylesheet" href="cv_styles.css">
     <!-- Favicon --> 
     <link rel="icon" type="image/png" href="https://github.com/TommyLimier/Ressource/blob/main/favicon-96x96.png?raw=true" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/TommyLimier/Ressource/ca371770d7a1f54317d2a33b9bd003a81b301db3/favicon.svg" />
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/TommyLimier/Ressource/refs/heads/main/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/TommyLimier/Ressource/blob/main/apple-touch-icon.png?raw=true" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="https://github.com/TommyLimier/Ressource/blob/main/web-app-manifest-512x512.png?raw=true" />
 </head>
 <body>
     <!-- HEADER -->
     <header>
         <div class="header-content">
             <img src="https://raw.githubusercontent.com/TommyLimier/Ressource/refs/heads/main/Tommy_limierlogo-1-.png" 
-                 alt="Photo de profil Tommy LIMIER" class="profile-picture">
+                 alt="Photo de profil Tommy LIMIER" class="profile-picture" loading="lazy"  >
             <h1>Développeur Web en Devenir</h1>
             <div id="sticky-header">
                 <nav>
-                    <!-- Menu Burger -->
+                    <!-- Bouton menu burger -->
                     <button id="burger-menu" class="burger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span>  
+                        <span></span>  
+                        <span></span>  
                     </button>
                     <ul class="nav-list">
                         <li><a href="#contact">Contact</a></li>
@@ -46,6 +41,7 @@
     </header> 
     <main>
         <!-- CONTACT -->
+        
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="contact-info">
@@ -55,6 +51,7 @@
             </div>
         </section>
         <!-- GOAL -->
+        
         <section id="goal">
             <h2>Objectif Professionnel</h2>
             <p>
@@ -104,7 +101,7 @@
         <!-- XP -->
         <section id="xp" class="timeline">
             <h2>Expériences Pro et Extra-professionnelles</h2>
-            <div class="event">
+            <div class="event2">
                 <h3>Compositeur de musique et mixeur son</h3>
                 <p>KironKey & Kno972 (2023)</p>
                 <ul>
@@ -115,11 +112,20 @@
                     <li>Réaliser l'identité sonore d'un jeu de société fantastique caribéen.</li>
                 </ul>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EQGn4RocZZs?si=lY-56yNI5qnKzjB1" title="YouTube video player" frameborder="0" allow="accelerometer; 
-                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe 
+                      width="560" 
+                      height="315" 
+                      src="https://www.youtube.com/embed/EQGn4RocZZs?si=MIDgq9W8AbKr5rWw&rel=0" 
+                      title="Vidéo de présentation Tommy LIMIER" 
+                      frameborder="0" 
+                      loading="lazy" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerpolicy="strict-origin-when-cross-origin" 
+                      allowfullscreen>
+                </iframe>
                 </div>
             </div>
-            <div class="event">
+            <div class="event2">
                 <h3>Assistant Polyvalent</h3>
                 <p>SORE SARL (2018-2021)</p>
                 <ul>
@@ -133,24 +139,21 @@
                     <p><strong>Réduction des erreurs sur les commandes.</strong></p>
                 </ul>
                 <div class="qr-code">
-                    <a target="_blank" href="https://github.com/TommyLimier/Ressource/blob/main/R%C3%A9alisation_Cuisine_SORE_SARL.jpg?raw=true">
+                    <a target="_blank" href="https://raw.githubusercontent.com/TommyLimier/Ressource/refs/heads/main/R%C3%A9alisation_Cuisine_SORE_SARL.jpg">
                         <img src="https://github.com/TommyLimier/Ressource/blob/main/QR_R%C3%A9alisation_Cuisine_SORE_SARL.png?raw=true" alt="qr-code Cuisine">
                     </a>
                 </div>
             </div>
         </section>
     </main>
-    <!-- FOOTER -->
     <footer>
         <p>&copy; Novembre 2024 Tommy LIMIER - Tous droits réservés.</p>
     </footer>
-    <!-- BACK TO TOP -->
     <a href="#" id="backToTop" title="Retour en haut">
         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed">
             <path d="m282-225-42-42 240-240 240 240-42 42-198-198-198 198Zm0-253-42-42 240-240 240 240-42 42-198-198-198 198Z"/>
         </svg>
     </a>
-    <!-- SCRIPT link -->
     <script src="cv_script.js"></script>
 </body>
 </html>
